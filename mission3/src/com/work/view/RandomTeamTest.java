@@ -4,11 +4,18 @@ import java.util.Random;
 
 public class RandomTeamTest {
 
+		/*
+		 * # 수행결과 문제 및 개선사항
+		 * 
+		 * 1.일부 수강생이 중복배정된 결과 문제
+		 * 2.팀원 이름 정렬 {String.CompareTo(String)}
+		 */
 	public static void main(String[] args) {
 		int teamMemberLengthCols = 4;
 		if (args.length == 1) {
 			teamMemberLengthCols = Integer.parseInt(args[0]);
 		} else {
+			System.out.println("[사용방법] java RandomTeamTest 팀별인원숫자");
 			System.out.println("[팀당 인원수를 입력하지 않아 팀당 인원수를 기본 4명으로 진행합니다.]");
 		}
 		
